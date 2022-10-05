@@ -16,4 +16,16 @@ Firm collapse prediction has been a subject of interest for almost a century and
     attr10 - equity / total assets
     ...
     
+# Steps to make a prediction
+1. EDA
+2. Data Partitioning
+3. Dealing with missing value and outliers
+4. Modeling
+6. Evaluation
+
+# Try different preprocessing and modeling methods
+Make sure that always do data partition before any preprocessing, because testing set should never be touched or changed.
+We tried preprocessing methods, such as replacement, re
     
+# Different combinations and ensembing 
+![image](https://user-images.githubusercontent.com/58899897/194169959-4bd8a932-4cee-4b52-a324-6e0e91c89edd.png)
