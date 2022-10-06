@@ -67,7 +67,7 @@ The ROC curve  plots the true positive rate (TPR) against the false positive rat
 True Positive also knows as sensitivity, and True Negative also knows as specificity.
 
 Actual↓ \ Predicted→               
-                                  Positive          Negative
+               ______              Positive          Negative
 
 Positive                       True Positive     False Negative
 
