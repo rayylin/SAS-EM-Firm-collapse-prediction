@@ -66,11 +66,12 @@ From the ROC curve we could see that model 1 (Green line) performed extremely we
 The ROC curve  plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
 True Positive also knows as sensitivity, and True Negative also knows as specificity.
 
-Actual↓ \ Predicted→     Positive          Negative
+Actual↓ \ Predicted→               
+                                  Positive          Negative
 
-Positive            True Positive     False Negative
+Positive                       True Positive     False Negative
 
-Negative            False Positive    True Negative
+Negative                       False Positive    True Negative
 # Final Result
 we choose a model that performs well and has similar performance for both the training and testing set, as this result means that overfitting would not greatly affect our model. After choosing a model, we use the whole training set to train the data and import a external testing set, which has 5,000 observasions.
 
