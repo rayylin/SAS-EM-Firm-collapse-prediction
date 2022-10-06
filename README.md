@@ -46,12 +46,13 @@ For example, we tried Neural Network with different number of hidden layers and 
     
 # Different combinations and ensembing 
 ![image](https://user-images.githubusercontent.com/58899897/194169959-4bd8a932-4cee-4b52-a324-6e0e91c89edd.png)
-![image](https://user-images.githubusercontent.com/58899897/194190249-f819cc36-20b2-4d18-a63f-dbf87bbd9830.png)
+
 ![image](https://user-images.githubusercontent.com/58899897/194190279-96147599-0894-4e33-9b80-ea7bf7dd1719.png)
 
 
-Model evaluation:
+# Model evaluation:
 We used ROC and RSS to determine which model performed better.
+
 We could not relied on only RSS, as it may have overfitting issue.
 
 ![image](https://user-images.githubusercontent.com/58899897/194190561-52f569a7-7798-4730-b93b-b2d4a7719d5c.png)
@@ -61,6 +62,17 @@ We could not relied on only RSS, as it may have overfitting issue.
 
 ![image](https://user-images.githubusercontent.com/58899897/194191317-f98a52ab-bfe6-43c3-848d-1449b698f106.png)
 
-From the ROC curve we could see that model 1 (Green line) performed extremely well for the training set but not that well for the testing set
-The ROC curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
-Final Result, we choose a model that performs well and has similar performance for both the training and testing set, as this result means that overfitting would not greatly affect our model.
+From the ROC curve we could see that model 1 (Green line) performed extremely well for the training set but not that well for the testing set, meaning that there could be overfitting issue. Overfitting issue means that a model fits perfectly against the training data.
+The ROC curve  plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
+True Positive also knows as sensitivity, and True Negative also knows as specificity.
+
+Actual↓ \ Predicted→     Positive          Negative
+
+Positive            True Positive     False Negative
+
+Negative            False Positive    True Negative
+# Final Result
+we choose a model that performs well and has similar performance for both the training and testing set, as this result means that overfitting would not greatly affect our model. After choosing a model, we use the whole training set to train the data and import a external testing set, which has 5,000 observasions.
+
+The model has 96% accuracy for the external testing set.
+![image](https://user-images.githubusercontent.com/58899897/194190249-f819cc36-20b2-4d18-a63f-dbf87bbd9830.png)
